@@ -1,0 +1,28 @@
+body {
+    background-image: url(./images/mesh-gradient.png);
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color:rgb(255, 255, 255)
+}
+
+/* main page */
+
+h3, h4 {
+    opacity: .7;
+}
+
+/* Menu */
+
+.menuItems {
+    text-align: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Resume */
+
