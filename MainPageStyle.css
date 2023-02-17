@@ -1,17 +1,58 @@
 body {
-    background-image: url(./images/mesh-gradient.png);
-    background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(./images/mesh-gradient.png);
+    background-color: black;
+    background-size: cover;
+    cursor: url(./images/cursor.png), auto !important;
 }
 
 h1, h2, h3, h4 {
     color:rgb(255, 255, 255)
 }
 
+a {
+  text-decoration: none; /* Removes underline */
+  color: rgb(255, 255, 255); /* Sets link color */
+  transition: opacity 0.3s; /* Adds a transition effect */
+}
+a:hover {
+    opacity: 1; /* Changes opacity to 100% on hover */
+  }
+
 /* main page */
 
-h3, h4 {
-    opacity: .7;
+
+
+.header {
+   
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+ul {
+    list-style: none;
+  }
+  
+
+.left,.right{
+    width: 50%;
+    padding:25px;
+}
+
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+    opacity: .5;
+}
+
+.welcome{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 /* Menu */
@@ -24,5 +65,41 @@ h1 {
     text-align: center;
 }
 
-/* Resume */
+/* Work */
 
+html{
+    scroll-behavior: smooth;
+}
+
+.box {
+    background-color: black;
+    height:500px;
+    padding: 25px;
+    /* could do "fit content?" */
+}
+
+/* Resume change to section ID  */ 
+
+.resumePad{
+    padding:25px;
+}
+
+.centerResume{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Conact */
+
+/* .contactPad{
+    padding:25px;
+    background-color: white;
+}
+*/
+.contact {
+    padding: 25px;
+    margin: 25px;
+    background-color: white;
+
+}
