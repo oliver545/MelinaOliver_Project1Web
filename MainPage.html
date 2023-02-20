@@ -5,26 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./MainPageStyle.css" />
+    <!--font-->
+    <link rel="stylesheet" href="https://use.typekit.net/hub5ery.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hub5ery.css">
     <title>Document</title>
 </head>
 <body>
     <!--THINGS THAT ARNT WORKING
-        1. Hovering doesnt turn words white 2.cant change mouse to circle image
-        3. work and hello sections need padding 4. change contact me section to actual icons-->
+        1.  2.cant change mouse to circle image
+        3. change contact me section to actual icons-->
     <!--main page-->
  
     <div class="header">
-        <div class="left"> <a href="./MainPage.html"><h3> Oliver Designs</h3> </a> </div>
+        <div class="left"> <a href="./MainPage.html"><h3 id="Oliver"> Oliver Designs</h3> </a> </div>
         
         <h1 class="welcome"> Welcome</h1>
     
         <div class="right">
             
             <ul>
-                <li><a href="#work"><h4> Work </h4></a></li>
-                <li><a href="#hello"><h4> Hello </h4></a></li>
-                <li><a href="#resume"><h4> Resume </h4></a></li>
-                <li><a href="#contact"><h4> Contact </h4></a></li>
+                <li class="item"><a href="#work"><h4> Work </h4></a></li>
+                <li class="item"><a href="#hello"><h4> Hello </h4></a></li>
+                <li class="item"><a href="#resume"><h4> Resume </h4></a></li>
+                <li class="item"><a href="#contact"><h4> Contact </h4></a></li>
 
             </ul> 
             
@@ -38,21 +41,28 @@
 
    <section id="work">
          <h4> Work </h4>
-         <div class="box">.</div>
+         <div class="outerBox"> <!--put work inside here-->
+            <div class="Ex1"></div>
+            <div class="Ex2"></div>
+            <div class="Ex3"></div>
+        </div>
    </section>
 
     <!--text about design-->
 
     <section id="hello">
         <h4> Hello! </h4>
+        <p class="helloTxT"> Thank you so much for stopping in, your support is greatly appreciated! I am a third-year student at The Ohio State University majoring in Visual Communication Design with a minor in Studio Arts. The projects featured on my site are the ones that I am most excited about and am interested in exploring further. Some areas of design that I would love to study more include research, UI/UX, and branding. One thing I especially enjoy about design is working with other people! I enjoy collaborating with my peers and expanding my ideas through them.
+            Within my studio art minor, I am exploring digital arts, life drawing, and photography. Photography is a creative outlet I enjoy exploring in my free time.  I love creating themed photoshoots for myself and my friends. Photography inspires my creativity along with creating fun makeup looks and outfits for the photoshoots. Apps I enjoy using for inspiration include Instagram, Pinterest, and Behance. 
+            Some extracurriculars I'm included in at OSU are Mountaineering Club, Art & Tech Club, and Longboard Club. I also enjoy music and play french horn, guitar, and ukelele! Some of my favorite art projects have been the redesign of my two longboards, my clay octopus, and my recreation of Kerby Rosanes's Time Guardian. </p>
     </section>
 
     <!--Resume-->
 
     <section id="resume">
-    <div class="resumePad">
-        <h4> Resume </h4>
-        <div> <img src="images/Oliver_Resume for Site copy.png" width="1000" height="auto" class="centerResume" > </div>
+    <h4> Resume </h4>
+    <div class="resume-container">
+        <img src="images/Oliver_Resume for Site copy.png" class="resumePad"> 
     </div>
     </section>
 

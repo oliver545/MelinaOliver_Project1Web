@@ -1,27 +1,26 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.8em;
     background: url(./images/mesh-gradient.png);
     background-color: black;
     background-size: cover;
     cursor: url(./images/cursor.png), auto !important;
+    padding: 25px;
 }
 
 h1, h2, h3, h4 {
     color:rgb(255, 255, 255)
 }
 
-a {
-  text-decoration: none; /* Removes underline */
-  color: rgb(255, 255, 255); /* Sets link color */
-  transition: opacity 0.3s; /* Adds a transition effect */
-}
-a:hover {
-    opacity: 1; /* Changes opacity to 100% on hover */
-  }
+
 
 /* main page */
 
-
+#Oliver{
+    font-family: "Mina";
+}
 
 .header {
    
@@ -37,7 +36,7 @@ ul {
 
 .left,.right{
     width: 50%;
-    padding:25px;
+    /*padding:25px;*/
 }
 
 .left{
@@ -45,8 +44,27 @@ ul {
 }
 .right{
     text-align: right;
-    opacity: .5;
+    /*opacity: .5;*/
 }
+.item {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.item:hover{
+    opacity: 1.0;
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+    /*color: rgb(255, 255, 255); /* Sets link color */
+    /* stransition: opacity 0.3s; /* Adds a transition effect */
+    /*opacity: 0.5;*/
+}
+ /*a :hover {
+     opacity: 1; /* Changes opacity to 100% on hover 
+}
+*/
+  
 
 .welcome{
   display: flex;
@@ -71,24 +89,64 @@ html{
     scroll-behavior: smooth;
 }
 
-.box {
+.outerBox {
     background-color: black;
     height:500px;
     padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
     /* could do "fit content?" */
 }
 
-/* Resume change to section ID  */ 
+.Ex1{
+    background-color: rgb(249, 0, 0);
+    height:300px;
+    width: 30%;
+    box-sizing: border-box;
+    border: 20px solid black;
+    padding: 10px;
+}
 
+.Ex2{
+    background-color: rgb(0, 25, 249);
+    height:300px;
+    width: 30%;
+    box-sizing: border-box;
+    border: 20px solid black;
+    padding: 10px;
+}
+
+.Ex3{
+    background-color: rgb(0, 162, 249);
+    height:300px;
+    width: 30%;
+    box-sizing: border-box;
+    border: 20px solid black;
+    padding: 10px;
+
+}
+
+/* Hello */
+
+.helloTxT{
+    padding: 25px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, .7);
+    
+}
+
+/* Resume*/ 
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
 .resumePad{
-    padding:25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  max-width: 90%;
 }
 
-.centerResume{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* Conact */
 
@@ -99,7 +157,7 @@ html{
 */
 .contact {
     padding: 25px;
-    margin: 25px;
-    background-color: white;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, .7);
 
 }
