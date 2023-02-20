@@ -3,9 +3,10 @@ body {
     font-weight: 300;
     font-style: normal;
     font-size: 1.8em;
-    background: url(./images/Website\ background\ copy.png);
+    background: url(./images/Website\ Background\ copy.png);
     background-color: black;
     background-size: cover;
+    margin: 0%;
     cursor: url(./images/cursor.png), auto;
     /*padding: 25px;*/
 }
@@ -92,11 +93,13 @@ html{
 
 .outerBox {
     background-color: black;
+    background-size: cover;
     height:500px;
     width: 100%;
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
+    
     /* could do "fit content?" */
 }
 
@@ -133,6 +136,7 @@ html{
 .bgHello{
     background-color: black;
     background-size: cover;
+    
 }
 
 .helloTxT{
@@ -167,4 +171,8 @@ html{
     margin-top: 50px;
     background-color: rgba(255, 255, 255, .7);
 
+}
+
+.section{
+    margin:0;
 }
