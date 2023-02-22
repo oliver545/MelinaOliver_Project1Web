@@ -6,10 +6,16 @@ body {
     /*background: url(./images/gradient-bg.gif);
     background-color: black;
     background-size: cover;*/
+    cursor: url(./images/cursor.png) 6.5 6.5, auto;
     margin: 0%;
-    cursor: url(./images/cursor.png), auto;
     /*padding: 25px;*/
 }
+
+/* .custom-cursor {
+    width: 32px;
+    height: 32px;
+    cursor: url(./images/cursor.png), auto;
+} could be used for images or works??*/
 
 h1, h2, h3, h4, p {
     color:rgb(255, 255, 255)
@@ -25,14 +31,14 @@ h1, h2, h3, h4, p {
     z-index: -1;
   }
   
-  #video-background {
+#video-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
 
 
@@ -82,10 +88,10 @@ a {
     /* stransition: opacity 0.3s; /* Adds a transition effect */
     /*opacity: 0.5;*/
 }
- /*a :hover {
-     opacity: 1; /* Changes opacity to 100% on hover 
+a :hover {
+    cursor: url(./images/cursor\ hover.png) 6.5 6.5, pointer;
 }
-*/
+
   
 
 .welcome{
@@ -124,7 +130,7 @@ html{
 }
 
 .Ex1{
-    background-color: rgb(249, 0, 0);
+    background-color: rgb(84, 94, 67);
     height:300px;
     width: 30%;
     box-sizing: border-box;
@@ -133,16 +139,17 @@ html{
 }
 
 .Ex2{
-    background-color: rgb(0, 25, 249);
+    background-color: rgb(23, 60, 22);
     height:300px;
     width: 30%;
     box-sizing: border-box;
     border: 20px solid black;
     padding: 10px;
 }
+
 
 .Ex3{
-    background-color: rgb(0, 162, 249);
+    background-color: rgb(46, 49, 107);
     height:300px;
     width: 30%;
     box-sizing: border-box;
@@ -150,6 +157,25 @@ html{
     padding: 10px;
 
 }
+
+.Ex1, .Ex2, .Ex3 {
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Ex1, .Ex2, .Ex3 {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.Ex1:hover, .Ex2:hover, .Ex3:hover{
+    opacity: 1.0;
+}
+
+/* other color 135,99,55*/
 
 /* Hello */
 
