@@ -120,11 +120,13 @@ html{
 .outerBox {
     background-color: black;
     background-size: cover;
-    height:500px;
-    width: 100%;
+    /*height:500px;
+    width: 100%;*/
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     
     /* could do "fit content?" */
 }
@@ -132,7 +134,7 @@ html{
 .Ex1{
     background-color: rgb(84, 94, 67);
     height:300px;
-    width: 30%;
+    width: 300px;
     box-sizing: border-box;
     border: 20px solid black;
     padding: 10px;
@@ -141,7 +143,7 @@ html{
 .Ex2{
     background-color: rgb(23, 60, 22);
     height:300px;
-    width: 30%;
+    width: 300px;
     box-sizing: border-box;
     border: 20px solid black;
     padding: 10px;
@@ -151,7 +153,7 @@ html{
 .Ex3{
     background-color: rgb(46, 49, 107);
     height:300px;
-    width: 30%;
+    width: 300px;
     box-sizing: border-box;
     border: 20px solid black;
     padding: 10px;
